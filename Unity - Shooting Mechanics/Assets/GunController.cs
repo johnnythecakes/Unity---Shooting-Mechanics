@@ -17,7 +17,7 @@ public class GunController : MonoBehaviour {
 	void Start () {
 		controller = controllerRight.GetComponent<SteamVR_TrackedController> ();
 		controller.TriggerClicked += TriggerPressed;
-		trackedObj = controllerRight.GetComponent<SteamVR_TrackedController> ();
+		trackedObj = controllerRight.GetComponent<SteamVR_TrackedObject> ();
 	}
 
 	private void TriggerPressed(object sender, ClickedEventArgs e){
